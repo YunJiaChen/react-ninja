@@ -41,10 +41,10 @@
 .blogPreview{
   padding: 10px 16px;
   margin: 20px 0px;
-  border-bottom: solid 1px #fafafa;
+  border-bottom: solid 1px rgb(176, 164, 164,0.5);
 }
 .blogPreview:hover{
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
 }
 .blogPreview h2{
   font-size: 20px;
