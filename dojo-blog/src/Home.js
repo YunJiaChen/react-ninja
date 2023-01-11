@@ -4,14 +4,16 @@ const Home = () => {
     const [blogs, setBlogs] = useState([
         { title: 'My new website', body: 'ppppp', author:'Rita', id:1 },
         { title: 'Welcome party!', body: 'ppppp', author:'Mark', id:2 },
-        { title: 'Happy new year!!', body: 'ppppp', author:'Rita', id:3 }
+        { title: 'Happy new year!!', body: 'ppppp', author:'Abby', id:3 }
     ]);
     
-    
+    const handleDelete = (id) => {
+        const newBlogs = blogs.filter(blog => blog.id !== id);
+        setBlogs(newBlogs);
+    };
     return (  
         <div className="home">
-            <BlogList blogs={blogs} title={'All Blog'}/>
-            <BlogList blogs={blogs.filter((blog) => blog.author === 'Rita')} title="Rita's Blogs"/>
+            <BlogList blogs={blogs} title={'All Blog'} handleDelete={ handleDelete }/>
 
         </div>
     );
