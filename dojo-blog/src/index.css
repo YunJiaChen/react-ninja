@@ -57,3 +57,12 @@
 .blogPreview a{
   text-decoration: none;
 }
+.blogDetails h2{
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.blogDetails div{
+  margin: 10px 0px;
+  line-height: 22px;
+}
